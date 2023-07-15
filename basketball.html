@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    $(document).ready(function(){
+
+
+      $("#myInput").on("keyup", function() {
+            
+        var value = $(this).val().toLowerCase();
+      
+        $(".st").filter(function() {
+      
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+         
+        });
+      });
+      });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- main container  -->
+
+    <div class="container-fluid">
+
+        <!-- header start-- -->
+        <div class="container-fluid bg-dark d-none d-md-block">
+                <!-- stripe  -->
+            <div class="container d-flex justify-content-between  text-light pt-2">
+                    <div class="d-flex">
+                        <i class="bi bi-telephone pe-3"></i>
+                        <p class="pe-5">+923121234567</p>
+
+                        <p class="pe-5">|</p>
+
+                        <i class="bi bi-envelope pe-3"></i>
+                        <p>abcxyz@email.com</p>
+
+                    </div>
+
+                    <div class="d-flex">
+
+                        <i class="bi bi-facebook pe-3"></i>
+                        <i class="bi bi-instagram pe-3"></i>
+                        <i class="bi bi-twitter pe-3"></i>
+                        <i class="bi bi-linkedin pe-3"></i>
+
+                    </div>
+            </div>
+        
+        </div>
+        <!-- header end   -->
+
+        <!-- navbar start-- -->
+
+        <nav class="navbar navbar-expand-lg  bg-light">
+          <div class="container-fluid">
+          
+            <a class="navbar-brand" href="#"><img src="images/loooooooogo-removebg-preview-removebg-preview.png" width="300" height="100" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="about.html">About</a>
+                </li>
+
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="contact.html">Contact Us</a>
+              </li>
+               
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark active  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Olympics Games
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item " href="football.html">FOOTBALL</a></li>
+                    <li><a class="dropdown-item " href="valleyball.html">VALLEYBALL</a></li>
+                    <li><a class="dropdown-item " href="cheese.html">CHESS</a></li>
+                    <li><a class="dropdown-item " href="hockey.html">HOCKEY</a></li>
+                    <li><a class="dropdown-item " href="cricket.html">CRICKET</a></li>
+                    <li><a class="dropdown-item " href="cycling.html">CYCLING</a></li>
+                    <li><a class="dropdown-item text-secondary" href="basketball.html">BASKETBALL</a></li>
+                    <li><a class="dropdown-item" href="tabletennis.html">TABELTENNIS</a></li>
+
+     </ul>
+                </li>
+              
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2"  id="myInput" placeholder="Search" >
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar end  -->
+      <!-- banner start-- -->
+
+
+
+
+<div class="container-fluid">
+      <div class="main-div">
+
+        <div class="row">
+        
+        <div class="col p-5">
+        <div>
+          <p class="txtcolor"> Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on
+             a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) 
+             through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of
+              the court), while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless 
+              made from behind the three-point line, when it is worth three.After a foul, timed play stops and the player fouled or designated
+               to shoot a technical foul is given one, two or three one-point free throws. The team with the most points at the end of the
+                game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.</p>
+          <h1>-BASKETBALL</h1>
+        
+        </div>
+        </div>
+        
+        <div class="col">
+          <img style="border: 2PX solid black;width: 100%;" src="images/bb1.jpg" alt="" >
+        </div>
+        
+</div>
+</div>
+
+</div>
+
+  <!--banner end-->
+
+<br>
+<br>
+
+<!--sports start-->
+
+
+
+<div class="container-fluid">
+
+
+
+    <div class="container-fluid" >
+
+        <div  class="row  text-sm-center">
+                <div id="stLawn" class="col-lg-3 col-md-3 col-sm-12 st">
+                  <a href="cricket.html"> <img src="imageS/bs1.png" onmousemove="imgChange()" onmouseleave="revert()"  id="p-img1" width="300" height="350" alt=""></a>
+                    <p>January 1955 against India</p>
+                </div>
+                <div id="stLawn" class="col-lg-3 col-md-3 col-sm-12 st">
+                    <img src="images/bs2.png" width="300" height="350"  alt="">
+                    <p>Test match was played in Delhi in October 1952</p>
+
+                </div>
+
+
+                <div id="stLawn" class="col-lg-3 col-md-3 col-sm-12 st">
+                    <img src="images/bs3.png" width="300" height="350"  alt="">
+                    <p>Nazar Mohammad scored an unbeaten 14</p>
+
+                </div>
+
+
+                <div id="stLawn" class="col-lg-3 col-md-3 col-sm-12 st">
+                    <img src="imageS/bs4.png" width="300" height="350"  alt="">
+                    <p> Match Date, 03 Dec 1982 ; Match Referee</p>
+
+                </div>
+
+        </div>
+
+    
+        
+        <div class="row text-sm-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 st">
+                <img src="imageS/bs5.png" width="300" height="350"  alt="">
+                <p> Match played on 13 march 2008</p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 st">
+                <img src="images/bs6.png" width="300" height="350"  alt="">
+                <p>Match played on 28 july 2018</p>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 st">
+                <img src="images/bsm.png" width="300" height="350"  alt="">
+                <p> Lancaster Park, Christchurch, 11 February 1973</p>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 st">
+                <img src="images/v8.jpg" width="300" height="350"  alt="">
+                <p>On 31st August 1999, Majid Khan, an outclass perfomance,</p>
+<br>
+<br>
+
+
+
+            </div>
+
+
+            <h1>BASKETBALL</h1>
+
+
+
+<div class="container-fluid">
+
+<P>The five players on each side fall into five playing positions. The tallest player is usually the center, the second-tallest and
+     strongest is the power forward, a slightly shorter but more agile player is the small forward, and the shortest players or the
+      best ball handlers are the shooting guard and the point guard, who implements the coach's game plan by managing the execution 
+      of offensive and defensive plays (player positioning). Informally, players may play three-on-three, two-on-two, and one-on-one.</P>
+    
+
+</div>
+
+
+
+
+
+<div class="container-fluid">
+<img style="border: 2px solid black;width: 100%;" src="images/bbf.jpg" alt="" >
+
+</div>
+
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+        <!-- footer banner  start -->
+
+        <div class="container-fluid bg-light text-dark text-center p-5  text-sm-center">
+
+
+            <h1 >Contact Us</h1>
+ 
+        
+         <a href="contact.html" >   <i class="bi bi-arrow-right-circle-fill h1 text-dark"></i></a> 
+        </div>
+ 
+ 
+         <!-- footer banner  end -->
+ 
+         <!-- footer start  -->
+ 
+         <div class="container-fluid bg-dark text-light" >
+ 
+             <div class="row  text-sm-center">
+ 
+                 <div class="col-lg-3 col-md-3 col-sm-12  py-4">
+                     <img src="images/loooooooogo-removebg-preview-removebg-preview.png" class="ps-3" width="300" height="150" alt="">
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-12 pe-3">
+                     <h3 class="text-decoration-underline py-4">Our Menu</h3>
+                     <ul class="list-unstyled">
+                      <li> <a href="about.html " class="text-light text-decoration-none">About</a></li>
+                      <li> <a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                      <li> <a href="about.html " class="text-light text-decoration-none">Privacy Policy</a></li>
+                      <li> <a href="about.html " class="text-light text-decoration-none">Term & Conditions</a></li>
+                         
+                     </ul>
+ 
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-12 pe-3">
+ 
+                     <h3 class="text-decoration-underline py-4"> ALL SPORTS PLAYERS</h3>
+                     <ul class="list-unstyled">
+                      <li> <a href="about.html " class="text-light text-decoration-none">SHAHID AFRIDI</a></li>
+                      <li> <a href="about.html " class="text-light text-decoration-none">MICHEAL PHILPS</a></li>
+                      <li> <a href="about.html " class="text-light text-decoration-none">VC FAKEEL</a></li>
+                      <li> <a href="about.html " class="text-light text-decoration-none">RONALDO</a></li>
+ 
+                         
+                     </ul>
+                 </div>
+                 <div class="col-lg-3 col-md-3 col-sm-12 pe-3">
+ 
+ 
+                     <h3 class="text-decoration-underline py-4">Contact Detail</h3>
+                     <p>+923121234567</p>
+                     <p>abcxyz@email.com</p>
+                     <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook pe-3 text-light text-decoration-none"></i></a>
+                     <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram pe-3 text-light text-decoration-none"></i></a>
+                     <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter pe-3 text-light text-decoration-none"></i></a>
+                     <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin pe-3 text-light text-decoration-none"></i></a>
+ 
+ 
+                 </div>
+             </div>
+ 
+         </div>
+ 
+         <!-- footer end  -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
